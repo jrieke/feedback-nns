@@ -4,9 +4,10 @@ from PIL import Image
 import random
 import numpy as np
 import matplotlib.pyplot as plt
+import utils
 
 
-def load_mnist(val_size=5000):
+def load_mnist(val_size=5000, seed=None):
     """Return the train (55k), val (5k, randomly drawn from the original test set) and test (10k) dataset for MNIST."""
     image_transform = transforms.Compose([
                            transforms.ToTensor(),
@@ -17,16 +18,19 @@ def load_mnist(val_size=5000):
     test_dataset = datasets.MNIST('data/mnist', train=False, download=True, transform=image_transform)
 
     # Split 5k samples from the train dataset for validation (similar to Sacramento et al. 2018).
-    # TODO: Maybe seed this? Cannot be done in the method directly, so would need to manually call torch.seed.
+    utils.seed_torch(seed)
     train_dataset, val_dataset = torch.utils.data.dataset.random_split(raw_train_dataset, (len(raw_train_dataset)-val_size, val_size))
+
     return train_dataset, val_dataset, test_dataset
 
 
-def load_emnist(val_size=10000):
+def load_emnist(val_size=10000, seed=None):
     """Return the train (55k), val (5k, randomly drawn from the original test set) and test (10k) dataset for MNIST."""
     image_transform = transforms.Compose([
-                           transforms.RandomHorizontalFlip(1),  # EMNIST images are flipped and rotated by default
+                           # EMNIST images are flipped and rotated by default, fix this here.
+                           transforms.RandomHorizontalFlip(1),
                            transforms.RandomRotation((90, 90)),
+
                            transforms.ToTensor(),
                            transforms.Normalize((0.1307,), (0.3081,))
                        ])
@@ -36,8 +40,9 @@ def load_emnist(val_size=10000):
     test_dataset = datasets.EMNIST('data/emnist', split='letters', train=False, download=True, transform=image_transform, target_transform=target_transform)
 
     # Split 5k samples from the train dataset for validation (similar to Sacramento et al. 2018).
-    # TODO: Maybe seed this? Cannot be done in the method directly, so would need to manually call torch.seed.
+    utils.seed_torch(seed)
     train_dataset, val_dataset = torch.utils.data.dataset.random_split(raw_train_dataset, (len(raw_train_dataset)-val_size, val_size))
+    
     return train_dataset, val_dataset, test_dataset
 
 
