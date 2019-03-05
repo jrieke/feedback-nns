@@ -1,0 +1,314 @@
+[
+    {
+        "history": "",
+        "index": 0,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.005,
+            "momentum": 0.3,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 1,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.005,
+            "momentum": 0.5,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 2,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.005,
+            "momentum": 0.7,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 3,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.01,
+            "momentum": 0.3,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 4,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.01,
+            "momentum": 0.5,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 5,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.01,
+            "momentum": 0.7,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 6,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.02,
+            "momentum": 0.3,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 7,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.02,
+            "momentum": 0.5,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 8,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.02,
+            "momentum": 0.7,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 9,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.04,
+            "momentum": 0.3,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 10,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.04,
+            "momentum": 0.5,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 11,
+        "params": {
+            "batch_size": 64,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.04,
+            "momentum": 0.7,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 12,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.005,
+            "momentum": 0.3,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 13,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.005,
+            "momentum": 0.5,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 14,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.005,
+            "momentum": 0.7,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 15,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.01,
+            "momentum": 0.3,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 16,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.01,
+            "momentum": 0.5,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 17,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.01,
+            "momentum": 0.7,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 18,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.02,
+            "momentum": 0.3,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 19,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.02,
+            "momentum": 0.5,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 20,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.02,
+            "momentum": 0.7,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 21,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.04,
+            "momentum": 0.3,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 22,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.04,
+            "momentum": 0.5,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    },
+    {
+        "history": "",
+        "index": 23,
+        "params": {
+            "batch_size": 128,
+            "batch_size_eval": 1000,
+            "learning_rate": 0.04,
+            "momentum": 0.7,
+            "num_epochs": 30,
+            "scaling_factor": 2
+        },
+        "status": "done"
+    }
+]
