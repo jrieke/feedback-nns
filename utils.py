@@ -128,7 +128,7 @@ class History:
         else:
             return {name: np.mean(values) for name, values in self.values.items()}
 
-    def plot(self, names=None, figsize=None, xlim=None, compare_to=None):
+    def plot(self, names=None, figsize=None, xlim=None, compare_to=None, legend=True):
         if names is None:
             names = self.values.keys()
 
@@ -178,7 +178,8 @@ class History:
                 if 'test_' + name in h.values:
                     plt.plot(h.values['test_' + name], color=color, linestyle=':')
 
-        fig.legend(lines, [h.params for h in histories])
+        if legend:
+            fig.legend(lines, [h.params for h in histories])
 
         axes[-1].set_xlabel('Epoch')
 
@@ -262,7 +263,7 @@ class GridSearch:
         best_index = None
         best_epoch = None
 
-        for index, history in self.load_all_histories().iteritems():
+        for index, history in self.load_all_histories().items():
             value = np.max(history.values[metric])
             if best_value is None or value > best_value:
                 best_value = value

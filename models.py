@@ -7,14 +7,12 @@ class FeedforwardNet(nn.Module):
     def __init__(self, num_hidden=500, dropout=0.5):
         super(FeedforwardNet, self).__init__()
         self.forward1 = nn.Linear(784, num_hidden)
-        self.forward2 = nn.Linear(num_hidden, num_hidden)
-        self.forward3 = nn.Linear(num_hidden, 26)
+        self.forward2 = nn.Linear(num_hidden, 26)
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):
         x = x.view(-1, 784)
         x = F.relu(self.forward1(x))
-        x = F.relu(self.forward2(x))
         x = self.dropout(x)
         x = F.log_softmax(self.forward2(x), dim=1)
         return x

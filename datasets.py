@@ -42,7 +42,7 @@ def load_emnist(val_size=10000, seed=None):
     # Split 5k samples from the train dataset for validation (similar to Sacramento et al. 2018).
     utils.seed_torch(seed)
     train_dataset, val_dataset = torch.utils.data.dataset.random_split(raw_train_dataset, (len(raw_train_dataset)-val_size, val_size))
-    
+
     return train_dataset, val_dataset, test_dataset
 
 
